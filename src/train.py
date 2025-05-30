@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
+from sklearn.metrics import accuracy_score
 
 def train_model(model, X_train, y_train, X_val, y_val, epochs=5, lr=0.001):
     criterion = nn.BCELoss()
